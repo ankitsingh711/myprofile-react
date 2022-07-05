@@ -1,0 +1,44 @@
+#nab{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    clear: both;
+    z-index:1
+}
+
+ul { 
+    list-style: none; 
+    display: table;
+    text-align: center;
+}
+
+li { 
+    display: table-cell; 
+    position: relative; 
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+
+a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
